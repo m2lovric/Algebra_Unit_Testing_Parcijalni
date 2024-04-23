@@ -25,10 +25,8 @@ namespace UnitTest
         {
             var controller = new HomeController(_logger.Object);
             int value = 500;
-
-            var result = controller.CheckCountValue(value);
             
-            Assert.Throws<Exception>(() => result);
+            Assert.Throws<Exception>(() => controller.CheckCountValue(value));
         }
     }
 }
